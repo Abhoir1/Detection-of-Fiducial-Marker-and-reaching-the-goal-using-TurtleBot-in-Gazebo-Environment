@@ -1,0 +1,19 @@
+target_reacher: # this has to match your node
+  ros__parameters:
+    aruco_target:
+      x: 6.5
+      y: 5.0
+    final_destination:
+      frame_id: "/robot1/odom"
+      aruco_0:
+        x: 2.0
+        y: 2.0
+      aruco_1:
+        x: 2.0
+        y: -2.0
+      aruco_2:
+        x: -2.0
+        y: -2.0
+      aruco_3:
+        x: -2.0
+        y: 2.0
