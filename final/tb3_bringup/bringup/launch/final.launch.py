@@ -144,7 +144,17 @@ def generate_launch_description():
         executable='world_odom_broadcaster',
         output='screen')
     
-
+    final_project_params = os.path.join(
+        get_package_share_directory('target_reacher'),
+        'params',
+        'final_params.yaml'
+    )
+    
+    start_target_reacher = Node(
+        package='target_reacher',
+        executable='target_reacher',
+        parameters=[final_project_params],
+        output='screen')
     
     start_aruco_detection_node_cmd = Node(
         package='ros2_aruco',
@@ -250,6 +260,6 @@ def generate_launch_description():
     # ld.add_action(start_odom_updater_cmd)
     ld.add_action(start_world_odom_broadcaster_cmd)
     ld.add_action(start_aruco_detection_node_cmd)
-    # ld.add_action(start_target_reacher)
+    ld.add_action(start_target_reacher)
 
     return ld

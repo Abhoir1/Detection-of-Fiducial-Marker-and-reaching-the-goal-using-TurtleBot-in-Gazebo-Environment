@@ -14,6 +14,7 @@ void WorldOdomBroadcaster::broadcast_world_odom()
     geometry_msgs::msg::TransformStamped t;
 
     std::string odom1 = "/robot1/odom";
+    std::string target = "target_origin";
     // std::string odom3 = "/robot3/odom";
 
     t.header.stamp = this->get_clock()->now();
@@ -33,5 +34,33 @@ void WorldOdomBroadcaster::broadcast_world_odom()
 
     // Send the transformation
     m_tf_broadcaster->sendTransform(t);
+
+    t.header.stamp = this->get_clock()->now();
+    t.header.frame_id = "world";
+    t.child_frame_id = target;
+
+    t.transform.translation.x = -2;
+    t.transform.translation.y = -3;
+    t.transform.translation.z = 0;
+
+    // tf2::Quaternion q;
+    q.setRPY(0, 0, 1.57);
+    t.transform.rotation.x = q.x();
+    t.transform.rotation.y = q.y();
+    t.transform.rotation.z = q.z();
+    t.transform.rotation.w = q.w();
+
+    // Send the transformation
+    m_tf_broadcaster->sendTransform(t);
+
+    // t.header.stamp = this->get_clock()->now();
+    // t.header.frame_id = "world";
+    // t.child_frame_id = odom2;
+    // m_tf_broadcaster->sendTransform(t);
+
+    // t.header.stamp = this->get_clock()->now();
+    // t.header.frame_id = "world";
+    // t.child_frame_id = odom3;
+    // m_tf_broadcaster->sendTransform(t);
 }
 

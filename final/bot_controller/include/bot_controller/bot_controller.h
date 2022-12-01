@@ -22,8 +22,8 @@ public:
     BotController(std::string node_name,
                   std::string robot_name,
                   bool go_to_goal = false,
-                  double linear_speed = 0.6,
-                  double angular_speed = 0.5) : Node(node_name),
+                  double linear_speed = 0.3,
+                  double angular_speed = 0.3) : Node(node_name),
                                                 m_robot_name{robot_name},
                                                 m_go_to_goal{go_to_goal},
                                                 m_linear_speed{linear_speed},
@@ -38,6 +38,8 @@ public:
                                                 // m_distance_to_goal{1.0}, 
                                                 // m_goal_set{false}
     {
+        auto current_location = std::make_pair<double, double>(3.0, 0.0);
+        m_location = current_location;
         m_cbg = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
 
         auto command_topic_name = "/" + m_robot_name + "/cmd_vel";
@@ -75,7 +77,10 @@ public:
         m_go_to_goal = true;
         m_goal_x = x;
         m_goal_y = y;
+        RCLCPP_INFO_STREAM(this->get_logger(), "Going to goal: [" << m_goal_x << "," << m_goal_y << "]");
     }
+
+    void stop();
 
 private:
     // attributes
@@ -140,7 +145,7 @@ private:
 
     double compute_yaw_from_quaternion();
     void move(double linear, double angular);
-    void stop();
+    
     void transform_callback();
     void go_to_goal_callback();
     void move_in_circle_callback();

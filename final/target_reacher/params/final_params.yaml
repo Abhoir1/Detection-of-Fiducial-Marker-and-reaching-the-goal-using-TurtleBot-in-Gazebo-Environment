@@ -5,13 +5,13 @@ target_reacher: # this has to match your node
       y: 5.0
     final_destination:
       frame_id: "/robot1/odom"
-      aruco_0:
+      aruco_2:
         x: 2.0
         y: 2.0
       aruco_1:
         x: 2.0
         y: -2.0
-      aruco_2:
+      aruco_0:
         x: -2.0
         y: -2.0
       aruco_3:

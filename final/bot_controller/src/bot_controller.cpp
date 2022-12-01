@@ -14,7 +14,7 @@ void BotController::transform_callback()
 
     geometry_msgs::msg::TransformStamped t;
 
-    RCLCPP_INFO(this->get_logger(), "Transform callback");
+    // RCLCPP_INFO(this->get_logger(), "Transform callback");
 
     try
     {
@@ -86,6 +86,7 @@ void BotController::move(double linear, double angular)
 
 void BotController::stop()
 {
+    m_go_to_goal = false;
     geometry_msgs::msg::Twist cmd_vel_msg;
     cmd_vel_msg.linear.x = 0;
     cmd_vel_msg.angular.z = 0;
@@ -95,7 +96,6 @@ void BotController::stop()
     goal_reached_msg.data = true;
     m_goal_reached_publisher->publish(goal_reached_msg);
 
-    m_go_to_goal = false;
     
 }
 
@@ -103,24 +103,21 @@ void BotController::go_to_goal_callback()
 {
 
     // RCLCPP_INFO_STREAM(this->get_logger(), "go_to_goal_callback");
-    if (m_location.first == 0 && m_location.second == 0)
-    {
-        RCLCPP_INFO(this->get_logger(), "Robot is not localized yet");
-        return;
-    }
+    // if (m_location.first == 3.0 && m_location.second == 0)
+    // {
+    //     RCLCPP_INFO(this->get_logger(), "Robot is not localized yet");
+    //     return;
+    // }
 
     if (!m_go_to_goal)
         return;
 
-    RCLCPP_INFO_STREAM(this->get_logger(), "Going to goal: [" << m_goal_x << "," << m_goal_y << "]");
     std::pair<double, double> goal{m_goal_x, m_goal_y};
     double distance_to_goal = compute_distance(m_location, goal);
-    double linear_x{};
-    double angular_z{};
 
     // RCLCPP_INFO_STREAM(this->get_logger(), "Current position: [" << m_location.first << "," << m_location.second << "]");
 
-    if (distance_to_goal > 0.10)
+    if (distance_to_goal > 0.05)
     {
         distance_to_goal = compute_distance(m_location, goal);
         double angle_to_goal = std::atan2(m_goal_y - m_location.second, m_goal_x - m_location.first);
@@ -140,10 +137,10 @@ void BotController::go_to_goal_callback()
         }
 
         // proportional control for linear velocity
-        linear_x = std::min(m_kv * distance_to_goal, m_linear_speed);
+        double linear_x = std::min(m_kv * distance_to_goal, m_linear_speed);
 
         // proportional control for angular velocity
-        angular_z = m_kh * w;
+        double angular_z = m_kh * w;
         if (angular_z > 0)
             angular_z = std::min(angular_z, m_angular_speed);
         else
@@ -153,7 +150,7 @@ void BotController::go_to_goal_callback()
     }
     else
     {
-        RCLCPP_INFO_STREAM(this->get_logger(), "Goal reached");
+        RCLCPP_INFO_STREAM(this->get_logger(), "********** Goal reached **********");
         stop();
     }
 }

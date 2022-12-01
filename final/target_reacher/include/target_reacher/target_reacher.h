@@ -16,7 +16,7 @@ public:
         m_bot_controller = bot_controller;
        
 
-        // m_bot_controller->set_goal(2, 3);
+        // m_bot_controller->set_goal(aruco_target_x, aruco_target_y);
     }
 
 private:
