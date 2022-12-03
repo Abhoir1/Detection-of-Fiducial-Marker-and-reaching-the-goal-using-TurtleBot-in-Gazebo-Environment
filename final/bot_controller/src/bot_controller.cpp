@@ -27,8 +27,8 @@ void BotController::transform_callback()
         return;
     }
 
-    RCLCPP_INFO(
-        this->get_logger(), "Position of robot in odom: [%f, %f]", t.transform.translation.x, t.transform.translation.y);
+    // RCLCPP_INFO(
+    //     this->get_logger(), "Position of robot in odom: [%f, %f]", t.transform.translation.x, t.transform.translation.y);
 
     m_location.first = t.transform.translation.x;
     m_location.second = t.transform.translation.y;
@@ -117,11 +117,11 @@ void BotController::go_to_goal_callback()
 
     // RCLCPP_INFO_STREAM(this->get_logger(), "Current position: [" << m_location.first << "," << m_location.second << "]");
 
-    if (distance_to_goal > 0.05)
+    if (distance_to_goal > 0.1)
     {
         distance_to_goal = compute_distance(m_location, goal);
         double angle_to_goal = std::atan2(m_goal_y - m_location.second, m_goal_x - m_location.first);
-        RCLCPP_INFO_STREAM(this->get_logger(), "Distance to goal: [" << distance_to_goal << "]");
+        // RCLCPP_INFO_STREAM(this->get_logger(), "Distance to goal: [" << distance_to_goal << "]");
 
         if (angle_to_goal < 0)
             // angle_to_goal = 2 * M_PI + angle_to_goal;

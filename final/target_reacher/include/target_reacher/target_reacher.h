@@ -5,6 +5,7 @@
 #include <string>
 #include "bot_controller/bot_controller.h"
 #include "ros2_aruco_interfaces/msg/aruco_markers.hpp"
+#include "tf2_ros/static_transform_broadcaster.h"
 
 // timer
 class TargetReacher : public rclcpp::Node
@@ -14,9 +15,7 @@ public:
     {
 
         m_bot_controller = bot_controller;
-       
 
-        // m_bot_controller->set_goal(aruco_target_x, aruco_target_y);
     }
 
 private:

@@ -248,8 +248,7 @@ def generate_launch_description():
     ld.add_action(declare_use_robot_state_pub_cmd)
 
     # Add the actions to start gazebo, robots and simulations
-    ld.add_action(start_gazebo_cmd)
-    ld.add_action(start_rviz_cmd)
+    
 
     for spawn_robot_cmd in spawn_robots_cmds:
         ld.add_action(spawn_robot_cmd)
@@ -261,5 +260,8 @@ def generate_launch_description():
     ld.add_action(start_world_odom_broadcaster_cmd)
     ld.add_action(start_aruco_detection_node_cmd)
     ld.add_action(start_target_reacher)
+    
+    ld.add_action(start_gazebo_cmd)
+    ld.add_action(start_rviz_cmd)
 
     return ld

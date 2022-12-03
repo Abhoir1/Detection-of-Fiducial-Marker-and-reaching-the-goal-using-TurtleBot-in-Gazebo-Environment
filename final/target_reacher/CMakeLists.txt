@@ -16,13 +16,14 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(bot_controller REQUIRED)
 find_package(ros2_aruco_interfaces REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 
 include_directories(include)
 
 
 add_executable(target_reacher src/target_reacher.cpp src/main.cpp)
-ament_target_dependencies(target_reacher bot_controller ros2_aruco_interfaces rclcpp geometry_msgs)
+ament_target_dependencies(target_reacher bot_controller tf2_ros ros2_aruco_interfaces rclcpp geometry_msgs)
 
 
 #############

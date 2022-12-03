@@ -22,7 +22,7 @@ public:
     BotController(std::string node_name,
                   std::string robot_name,
                   bool go_to_goal = false,
-                  double linear_speed = 0.3,
+                  double linear_speed = 0.5,
                   double angular_speed = 0.3) : Node(node_name),
                                                 m_robot_name{robot_name},
                                                 m_go_to_goal{go_to_goal},
