@@ -4,9 +4,9 @@
   <name>target_reacher</name>
   <version>0.0.0</version>
   <description>Main package for the final project</description>
-  <maintainer email="sarihbegfhsgefhggfnann@umd.edu">student1</maintainer>
-  <maintainer email="abhoir@ddvgfffddddddumdu">student2</maintainer>
-  <maintainer email="aditya9fdhgffrdrssss7@umd.edu">student3</maintainer>
+  <maintainer email="sarinann@umd.edu">student1</maintainer>
+  <maintainer email="abhoir@umd.edu">student2</maintainer>
+  <maintainer email="aditya97@umd.edu">student3</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
