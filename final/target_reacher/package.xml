@@ -5,9 +5,8 @@
   <version>0.0.0</version>
   <description>Main package for the final project</description>
   <maintainer email="sarinann@umd.edu">student1</maintainer>
-  <maintainer email="student2@email.com">student2</maintainer>
-  <maintainer email="student3@email.com">student3</maintainer>
-  <maintainer email="student4@email.com">student4</maintainer>
+  <maintainer email="abhoir@umd.edu">student2</maintainer>
+  <maintainer email="aditya97@umd.edu">student3</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
