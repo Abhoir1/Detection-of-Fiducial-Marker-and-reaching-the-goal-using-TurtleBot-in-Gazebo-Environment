@@ -67,7 +67,7 @@ void odom_updater::broadcast_odom()
 
 
     /*******************************************
-     * static broadcaster: "world" -> "/robot1/odom"
+     * Broadcaster: "/robot1/odom" -> "/robot1/base_footprint
      *******************************************/
     t.header.stamp = this->get_clock()->now();
     t.header.frame_id = odom;

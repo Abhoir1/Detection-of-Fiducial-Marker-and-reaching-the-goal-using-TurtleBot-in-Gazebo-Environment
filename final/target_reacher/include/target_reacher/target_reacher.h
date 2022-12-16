@@ -15,7 +15,7 @@ public:
     {
 
         m_bot_controller = bot_controller;
-
+        // m_bot_controller->set_goal(2,3);
     }
 
 private:
