@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/**",
+                "/opt/ros/galactic/include",
+                "/home/ab/ros2_ws/src/enpm809y_fall2022/first_package",
+                "/home/ab/ros2_ws/src/809y_project/final/bot_controller/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/final_plugins/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/target_reacher/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/tb3_gazebo/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/world_odom_broadcaster/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/odom_updater/include/**",
+                "/usr/include/**",
+                "/home/ab/ros2_ws/src/809y_project/final/odom_updater",
+                "/home/ab/ros2_ws/src/809y_project/final/odom_updater/include"
+
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named odom_updater
+
+# Build rule for target.
+odom_updater: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odom_updater
+.PHONY : odom_updater
+
+# fast build rule for target.
+odom_updater/fast:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/build
+.PHONY : odom_updater/fast
+
+#=============================================================================
 # Target rules for targets named odom_updater_uninstall
 
 # Build rule for target.
@@ -193,6 +206,60 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/main2.o: src/main2.cpp.o
+
+.PHONY : src/main2.o
+
+# target to build an object file
+src/main2.cpp.o:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/main2.cpp.o
+.PHONY : src/main2.cpp.o
+
+src/main2.i: src/main2.cpp.i
+
+.PHONY : src/main2.i
+
+# target to preprocess a source file
+src/main2.cpp.i:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/main2.cpp.i
+.PHONY : src/main2.cpp.i
+
+src/main2.s: src/main2.cpp.s
+
+.PHONY : src/main2.s
+
+# target to generate assembly for a file
+src/main2.cpp.s:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/main2.cpp.s
+.PHONY : src/main2.cpp.s
+
+src/odom_updater.o: src/odom_updater.cpp.o
+
+.PHONY : src/odom_updater.o
+
+# target to build an object file
+src/odom_updater.cpp.o:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/odom_updater.cpp.o
+.PHONY : src/odom_updater.cpp.o
+
+src/odom_updater.i: src/odom_updater.cpp.i
+
+.PHONY : src/odom_updater.i
+
+# target to preprocess a source file
+src/odom_updater.cpp.i:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/odom_updater.cpp.i
+.PHONY : src/odom_updater.cpp.i
+
+src/odom_updater.s: src/odom_updater.cpp.s
+
+.PHONY : src/odom_updater.s
+
+# target to generate assembly for a file
+src/odom_updater.cpp.s:
+	$(MAKE) -f CMakeFiles/odom_updater.dir/build.make CMakeFiles/odom_updater.dir/src/odom_updater.cpp.s
+.PHONY : src/odom_updater.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,8 +273,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... odom_updater"
 	@echo "... odom_updater_uninstall"
 	@echo "... uninstall"
+	@echo "... src/main2.o"
+	@echo "... src/main2.i"
+	@echo "... src/main2.s"
+	@echo "... src/odom_updater.o"
+	@echo "... src/odom_updater.i"
+	@echo "... src/odom_updater.s"
 .PHONY : help
 
 

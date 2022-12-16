@@ -1,3 +1,4 @@
+/home/ab/ros2_ws/src/809y_project/install/odom_updater/lib/odom_updater/odom_updater
 /home/ab/ros2_ws/src/809y_project/install/odom_updater/share/ament_index/resource_index/package_run_dependencies/odom_updater
 /home/ab/ros2_ws/src/809y_project/install/odom_updater/share/ament_index/resource_index/parent_prefix_path/odom_updater
 /home/ab/ros2_ws/src/809y_project/install/odom_updater/share/odom_updater/environment/ament_prefix_path.sh
