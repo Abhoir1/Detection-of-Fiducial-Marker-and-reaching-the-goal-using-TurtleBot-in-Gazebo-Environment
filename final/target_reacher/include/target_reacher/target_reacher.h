@@ -38,7 +38,7 @@ public:
 
         cmd_vel_publisher = this->create_publisher<geometry_msgs::msg::Twist>("/robot1/cmd_vel", 10);
 
-        goal_reached_subscriber = this->create_publisher<std_msgs::msg::Bool>("/goal_reached", 10, std::bind(&TargetReacher::timer_callback, this, std::placeholders::_1));
+        goal_reached_subscriber = this->create_subscription<std_msgs::msg::Bool>("/goal_reached", 10, std::bind(&TargetReacher::timer_callback, this, std::placeholders::_1));
 
         aruco_subscriber = this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("/aruco_markers", 10, std::bind(&TargetReacher::cb1, this, std::placeholders::_1));
 

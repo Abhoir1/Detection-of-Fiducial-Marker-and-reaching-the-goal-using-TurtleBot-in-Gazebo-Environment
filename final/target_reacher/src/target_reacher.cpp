@@ -79,20 +79,20 @@ void TargetReacher::cb2()
     {
         geometry_msgs::msg::TransformStamped t;
         // Look up for the transformation between "robot1/odom" and "final_destination" frames
-        // try
-        // {
-        //     t = m_tf_buffer->lookupTransform("robot1/odom", "final_destination", tf2::TimePointZero);
-        // }
-        // catch (const tf2::TransformException &ex)
-        // {
-        //     RCLCPP_INFO(
-        //         this->get_logger(), "Could not transform %s to %s: %s",
-        //         "robot1/odom", "final_destination", ex.what());
-        //     return;
-        // }
+        try
+        {
+            t = tf_buffer->lookupTransform("robot1/odom", "final_destination", tf2::TimePointZero);
+        }
+        catch (const tf2::TransformException &ex)
+        {
+            RCLCPP_INFO(
+                this->get_logger(), "Could not transform %s to %s: %s",
+                "robot1/odom", "final_destination", ex.what());
+            return;
+        }
 
-        // RCLCPP_INFO(
-        //     this->get_logger(), "Moving to goal [%f, %f]", t.transform.translation.x, t.transform.translation.y);
+        RCLCPP_INFO(
+            this->get_logger(), "Moving to goal [%f, %f]", t.transform.translation.x, t.transform.translation.y);
 
         m_bot_controller->set_goal(t.transform.translation.x, t.transform.translation.y);
     }
