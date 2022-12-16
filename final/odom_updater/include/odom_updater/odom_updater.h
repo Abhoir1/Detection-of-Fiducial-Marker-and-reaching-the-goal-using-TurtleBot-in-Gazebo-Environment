@@ -12,7 +12,9 @@
 class odom_updater : public rclcpp::Node
 {
 public:
-    odom_updater(std::string node_name) : Node(node_name)
+    // odom_updater(std::string node_name) : Node(node_name)
+    odom_updater()
+    : Node("odom_updater")
     {
         // Initialize the transform broadcaster
         m_tf_broadcaster =
