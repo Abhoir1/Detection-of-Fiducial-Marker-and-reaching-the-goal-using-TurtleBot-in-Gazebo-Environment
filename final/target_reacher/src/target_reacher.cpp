@@ -13,7 +13,7 @@ void TargetReacher::final_destination(int goal)
         {
             g.transform.translation.x = aruco_0_x;
             g.transform.translation.y = aruco_0_y;
-            g_rcutils_logging_initialized.transform.translation.z = 0.0;
+            g.transform.translation.z = 0.0;
         }else if (goal==1)
         {
             g.transform.translation.x = aruco_1_x;
@@ -36,7 +36,7 @@ void TargetReacher::final_destination(int goal)
         g.transform.rotation.z = 0.0;
         g.transform.rotation.w = 1.0;
 
-        broadcaster->sendTransform(g);
+        final_destination_broadcaster->sendTransform(g);
 
         i=true;
 }

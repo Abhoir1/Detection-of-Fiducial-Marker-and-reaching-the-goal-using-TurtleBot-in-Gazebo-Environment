@@ -38,7 +38,7 @@ public:
 
         cmd_vel_publisher = this->create_publisher<geometry_msgs::msg::Twist>("/robot1/cmd_vel", 10);
 
-        goal_reached_subscriber = this->create_publisher<std_msgs::msg::Bool>("/goal_reached", 10, std::bind(&TargetReacher::timer_callback, this, std::p:laceholders::_1));
+        goal_reached_subscriber = this->create_publisher<std_msgs::msg::Bool>("/goal_reached", 10, std::bind(&TargetReacher::timer_callback, this, std::placeholders::_1));
 
         aruco_subscriber = this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("/aruco_markers", 10, std::bind(&TargetReacher::cb1, this, std::placeholders::_1));
 
@@ -47,7 +47,7 @@ public:
 
         m_timer = this->create_wall_timer(1s, std::bind(&TargetReacher::cb2, this));
         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
-        tf_listener = std::make_shared<tf2_ros::TransformListener>(*m_tf_buffer);
+        tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer);
 
 
     }
@@ -64,6 +64,19 @@ private:
     rclcpp::TimerBase::SharedPtr m_timer;
 
     std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+    std::string frame_id;
+    bool i;
+    double aruco_0_x;
+    double aruco_0_y;
+
+    double aruco_1_x;
+    double aruco_1_y;
+
+    double aruco_2_x;
+    double aruco_2_y;
+
+    double aruco_3_x;
+    double aruco_3_y;
 
     void final_destination(int k);
 
