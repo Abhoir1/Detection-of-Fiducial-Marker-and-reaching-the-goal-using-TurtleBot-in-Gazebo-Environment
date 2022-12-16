@@ -134,10 +134,10 @@ def generate_launch_description():
                             #   'use_namespace': 'True',
                               'rviz_config': rviz_config_file}.items())
     
-    # start_odom_updater_cmd = Node(
-    #     package='odom_updater',
-    #     executable='odom_updater',
-    #     output='screen')
+    start_OdomUpdater_cmd = Node(
+        package='odom_updater',
+        executable='odom_updater',
+        output='screen')
     
     start_world_odom_broadcaster_cmd = Node(
         package='world_odom_broadcaster',
