@@ -15,24 +15,24 @@ public:
     {
 
         m_bot_controller = bot_controller;
-        bool i = false;
+        i = false;
         
         auto goal_x = this->declare_parameter<double>("aruco_target.x");
         auto goal_y = this->declare_parameter<double>("aruco_target.y");
 
-        auto frame_id = this->declare_parameter<std::string>("final_destination.frame_id");
+        frame_id = this->declare_parameter<std::string>("final_destination.frame_id");
 
-        auto aruco_0_x = this->declare_parameter<double>("final_destination.aruco_0.x");
-        auto aruco_0_y = this->declare_parameter<double>("final_destination.aruco_0.y");
+        aruco_0_x = this->declare_parameter<double>("final_destination.aruco_0.x");
+        aruco_0_y = this->declare_parameter<double>("final_destination.aruco_0.y");
 
-        auto aruco_1_x = this->declare_parameter<double>("final_destination.aruco_1.x");
-        auto aruco_1_y = this->declare_parameter<double>("final_destination.aruco_1.y");
+        aruco_1_x = this->declare_parameter<double>("final_destination.aruco_1.x");
+        aruco_1_y = this->declare_parameter<double>("final_destination.aruco_1.y");
 
-        auto aruco_2_x = this->declare_parameter<double>("final_destination.aruco_2.x");
-        auto aruco_2_y = this->declare_parameter<double>("final_destination.aruco_2.y");
+        aruco_2_x = this->declare_parameter<double>("final_destination.aruco_2.x");
+        aruco_2_y = this->declare_parameter<double>("final_destination.aruco_2.y");
 
-        auto aruco_3_x = this->declare_parameter<double>("final_destination.aruco_3.x");
-        auto aruco_3_y = this->declare_parameter<double>("final_destination.aruco_3.y");
+        aruco_3_x = this->declare_parameter<double>("final_destination.aruco_3.x");
+        aruco_3_y = this->declare_parameter<double>("final_destination.aruco_3.y");
 
         m_bot_controller->set_goal(goal_x,goal_y);
 
@@ -45,7 +45,7 @@ public:
         final_destination_broadcaster =
             std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
 
-        m_timer = this->create_wall_timer(1s, std::bind(&TargetReacher::cb2, this));
+        m_timer = this->create_wall_timer(std::chrono::milliseconds((int)(1000.0 / 1.0)), std::bind(&TargetReacher::cb2, this));
         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
         tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer);
 
