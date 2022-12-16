@@ -55,10 +55,10 @@
 
 void odom_updater::timer_callback(const std::shared_ptr<nav_msgs::msg::Odometry> msg)
 {
-    broadcast_odom(auto const std::shared_ptr<nav_msgs::msg::Odometry> msg);
+    broadcast_odom(auto std::shared_ptr<nav_msgs::msg::Odometry> msg);
 }
 
-void odom_updater::broadcast_odom(const std::shared_ptr<nav_msgs::msg::Odometry> msg)
+void odom_updater::broadcast_odom(suto std::shared_ptr<nav_msgs::msg::Odometry> msg)
 {
     geometry_msgs::msg::TransformStamped t;
 
