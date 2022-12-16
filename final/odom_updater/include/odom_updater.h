@@ -7,10 +7,10 @@
 #include "tf2_ros/static_transform_broadcaster.h"
 #include <string>
 
-class WorldOdomBroadcaster : public rclcpp::Node
+class OdomUpdater : public rclcpp::Node
 {
 public:
-    WorldOdomBroadcaster(std::string node_name) : Node(node_name)
+    OdomUpdater(std::string node_name) : Node(node_name)
     {
         // Initialize the transform broadcaster
         m_tf_broadcaster =
@@ -18,7 +18,7 @@ public:
 
         // Create a timer
         m_timer = this->create_wall_timer(std::chrono::milliseconds((int)(1000.0 / 1.0)),
-                                          std::bind(&WorldOdomBroadcaster::timer_callback, this));
+                                          std::bind(&OdomUpdater::timer_callback, this));
     }
 
 private:
@@ -27,6 +27,6 @@ private:
     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> m_tf_broadcaster;
 
     // methods
-    void broadcast_world_odom();
+    void broadcast_odom();
     void timer_callback();
 };
