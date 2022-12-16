@@ -37,6 +37,6 @@ private:
     std::unique_ptr<tf2_ros::TransformBroadcaster> m_tf_broadcaster;
 
     // methods
-    void broadcast_odom(const std::shared_ptr<nav_msgs::msg::Odometry> msg);
+    // void broadcast_odom(const std::shared_ptr<nav_msgs::msg::Odometry> msg);
     void timer_callback(const std::shared_ptr<nav_msgs::msg::Odometry> msg);
 };
