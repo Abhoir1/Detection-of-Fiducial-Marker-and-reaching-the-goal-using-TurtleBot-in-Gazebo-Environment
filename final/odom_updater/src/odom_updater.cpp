@@ -53,12 +53,12 @@
 #include "geometry_msgs/msg/pose.hpp"
 #include "rclcpp/rclcpp.hpp"
 
-void OdomUpdater::timer_callback()
+void odom_updater::timer_callback()
 {
     broadcast_odom();
 }
 
-void OdomUpdater::broadcast_odom()
+void odom_updater::broadcast_odom()
 {
     geometry_msgs::msg::TransformStamped t;
 
