@@ -1,0 +1,45 @@
+{
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wconversion",
+    "-Wnull-dereference",
+    "-Wsign-conversion"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "python.autoComplete.extraPaths": [
+    "/home/sarin/ros2_ws/install/tb3_gazebo_spawner/lib/python3.8/site-packages",
+    "/home/sarin/ros2_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages",
+    "/home/sarin/ros2_ws/install/ros2_aruco/lib/python3.8/site-packages",
+    "/home/sarin/final_ws/install/tb3_gazebo_spawner/lib/python3.8/site-packages",
+    "/home/sarin/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages",
+    "/home/sarin/final_ws/install/ros2_aruco/lib/python3.8/site-packages",
+    "/opt/ros/galactic/lib/python3.8/site-packages"
+  ]
+}

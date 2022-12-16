@@ -1,0 +1,39 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/sarin/ros2_ws/install/tb3_gazebo/include/**",
+        "/home/sarin/ros2_ws/install/ros2_aruco_interfaces/include/**",
+        "/home/sarin/ros2_ws/install/final_plugins/include/**",
+        "/home/sarin/ros2_ws/install/bot_controller/include/**",
+        "/home/sarin/final_ws/install/tb3_gazebo/include/**",
+        "/home/sarin/final_ws/install/target_reacher/include/**",
+        "/home/sarin/final_ws/install/ros2_aruco_interfaces/include/**",
+        "/home/sarin/final_ws/install/final_plugins/include/**",
+        "/home/sarin/final_ws/install/bot_controller/include/**",
+        "/opt/ros/galactic/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/bot_controller/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/final_plugins/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/odom_updater/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/target_reacher/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/tb3_gazebo/include/**",
+        "/home/sarin/ros2_ws/src/809y_project/final/world_odom_broadcaster/include/**",
+        "/home/sarin/ros2_ws/src/enpm809y_fall2022/av_camera/include/**",
+        "/home/sarin/ros2_ws/src/enpm809y_fall2022/av_server/include/**",
+        "/home/sarin/ros2_ws/src/enpm809y_fall2022/av_server_multi/include/**",
+        "/home/sarin/ros2_ws/src/enpm809y_fall2022/first_package/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
