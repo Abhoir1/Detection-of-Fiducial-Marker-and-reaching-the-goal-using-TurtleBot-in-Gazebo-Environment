@@ -3,7 +3,7 @@
 
 void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> msg)
 {
-    if (msg->data == true && !m_is_aruco_marker_detected)
+    if (msg->data == true)
     {
         geometry_msgs::msg::Twist vel;
         vel.linear.x = 0.0;
