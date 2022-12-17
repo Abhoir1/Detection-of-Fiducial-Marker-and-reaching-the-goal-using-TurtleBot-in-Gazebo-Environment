@@ -28,7 +28,7 @@ void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> ms
 }
 
 /**
- * @brief Method to transform the goal 2 coordinates from the frame of the aruco )final destination)
+ * @brief Method to transform the goal 2 coordinates from the frame of the aruco (final destination)
  *  to the frame of the robot through transform function
  * 
  * @param goal, pose, orientation

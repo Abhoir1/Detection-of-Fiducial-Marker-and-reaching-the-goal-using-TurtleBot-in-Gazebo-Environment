@@ -167,11 +167,16 @@ private:
     double aruco_3_x;
     double aruco_3_y;
 
+    //Method to transform the goal coordinates from the frame of the aruco 
+    //to the frame of the robot through transform function
     void final_destination(int k);
 
+    //Reading the marker_ids in the Aruco Interfaces and retrive the goal positions
     void check_marker(const std::shared_ptr<ros2_aruco_interfaces::msg::ArucoMarkers> aruco);
 
+    //Timer callback function to publish the twist velocities into robot1/cmd_vel
     void timer_callback(const std::shared_ptr<std_msgs::msg::Bool> msg);
 
+    //Logging the movement of the robot using set_goal function while checking for error in TF tree
     void check_destination();
 };
