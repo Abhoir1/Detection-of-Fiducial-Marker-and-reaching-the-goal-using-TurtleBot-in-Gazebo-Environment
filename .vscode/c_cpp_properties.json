@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/galactic/include/**",
+        "/home/ab/final_ws/src/enpm809y_FinalFall2022/final/bot_controller/include/**",
+        "/home/ab/final_ws/src/enpm809y_FinalFall2022/final/final_plugins/include/**",
+        "/home/ab/final_ws/src/enpm809y_FinalFall2022/final/target_reacher/include/**",
+        "/home/ab/final_ws/src/enpm809y_FinalFall2022/final/tb3_gazebo/include/**",
+        "/home/ab/final_ws/src/enpm809y_FinalFall2022/final/world_odom_broadcaster/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

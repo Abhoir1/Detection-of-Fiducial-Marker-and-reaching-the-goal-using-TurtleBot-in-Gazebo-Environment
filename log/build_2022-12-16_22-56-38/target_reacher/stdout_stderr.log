@@ -1,0 +1,42 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+-- Found bot_controller: 0.0.0 (/home/ab/final_ws/install/bot_controller/share/bot_controller/cmake)
+-- Found ros2_aruco_interfaces: 0.1.0 (/home/ab/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ab/final_ws/build/target_reacher
+[35m[1mScanning dependencies of target target_reacher[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/target_reacher.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/target_reacher.dir/src/target_reacher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable target_reacher[0m
+[100%] Built target target_reacher
+-- Install configuration: ""
+-- Installing: /home/ab/final_ws/install/target_reacher/include/target_reacher
+-- Installing: /home/ab/final_ws/install/target_reacher/include/target_reacher/target_reacher.h
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/params
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/params/final_params.yaml
+-- Installing: /home/ab/final_ws/install/target_reacher/lib/target_reacher/target_reacher
+-- Set runtime path of "/home/ab/final_ws/install/target_reacher/lib/target_reacher/target_reacher" to ""
+-- Installing: /home/ab/final_ws/install/target_reacher/share/ament_index/resource_index/package_run_dependencies/target_reacher
+-- Installing: /home/ab/final_ws/install/target_reacher/share/ament_index/resource_index/parent_prefix_path/target_reacher
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/environment/ament_prefix_path.sh
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/environment/ament_prefix_path.dsv
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/environment/path.sh
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/environment/path.dsv
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/local_setup.bash
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/local_setup.sh
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/local_setup.zsh
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/local_setup.dsv
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/package.dsv
+-- Installing: /home/ab/final_ws/install/target_reacher/share/ament_index/resource_index/packages/target_reacher
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/cmake/target_reacherConfig.cmake
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/cmake/target_reacherConfig-version.cmake
+-- Installing: /home/ab/final_ws/install/target_reacher/share/target_reacher/package.xml

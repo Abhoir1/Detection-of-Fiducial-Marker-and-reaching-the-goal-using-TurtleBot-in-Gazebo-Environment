@@ -1,0 +1,24 @@
+[100%] Built target disable_shadows_plugin
+-- Install configuration: ""
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/library_path.sh
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/library_path.dsv
+-- Installing: /home/ab/final_ws/install/final_plugins/share/ament_index/resource_index/package_run_dependencies/final_plugins
+-- Installing: /home/ab/final_ws/install/final_plugins/share/ament_index/resource_index/parent_prefix_path/final_plugins
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/ament_prefix_path.sh
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/ament_prefix_path.dsv
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/path.sh
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/environment/path.dsv
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/local_setup.bash
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/local_setup.sh
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/local_setup.zsh
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/local_setup.dsv
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/package.dsv
+-- Installing: /home/ab/final_ws/install/final_plugins/share/ament_index/resource_index/packages/final_plugins
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/cmake/final_pluginsConfig.cmake
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/cmake/final_pluginsConfig-version.cmake
+-- Installing: /home/ab/final_ws/install/final_plugins/share/final_plugins/package.xml
+-- Installing: /home/ab/final_ws/install/final_plugins/include
+-- Installing: /home/ab/final_ws/install/final_plugins/include/disable_shadows_plugin.hpp
+-- Installing: /home/ab/final_ws/install/final_plugins/lib/libdisable_shadows_plugin.so
+-- Set runtime path of "/home/ab/final_ws/install/final_plugins/lib/libdisable_shadows_plugin.so" to ""

@@ -1,0 +1,79 @@
+[0.045s] Invoking command in '/home/ab/final_ws/build/bot_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/bot_controller -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/bot_controller
+[0.436s] -- The C compiler identification is GNU 9.4.0
+[0.436s] -- The CXX compiler identification is GNU 9.4.0
+[0.436s] -- Check for working C compiler: /usr/bin/cc
+[0.437s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.437s] -- Detecting C compiler ABI info
+[0.437s] -- Detecting C compiler ABI info - done
+[0.437s] -- Detecting C compile features
+[0.437s] -- Detecting C compile features - done
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.437s] -- Detecting CXX compiler ABI info
+[0.437s] -- Detecting CXX compiler ABI info - done
+[0.437s] -- Detecting CXX compile features
+[0.437s] -- Detecting CXX compile features - done
+[0.437s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.437s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.438s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.455s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.488s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.492s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.552s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.575s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.648s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.691s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.693s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.708s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.708s] -- Looking for pthread.h
+[0.766s] -- Looking for pthread.h - found
+[0.766s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.830s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.831s] -- Looking for pthread_create in pthreads
+[0.873s] -- Looking for pthread_create in pthreads - not found
+[0.874s] -- Looking for pthread_create in pthread
+[0.926s] -- Looking for pthread_create in pthread - found
+[0.927s] -- Found Threads: TRUE  
+[1.042s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[1.067s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[1.120s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[1.127s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[1.459s] -- Configuring done
+[1.470s] -- Generating done
+[1.472s] -- Build files have been written to: /home/ab/final_ws/build/bot_controller
+[1.482s] Invoked command in '/home/ab/final_ws/build/bot_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/bot_controller -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/bot_controller
+[1.484s] Invoking command in '/home/ab/final_ws/build/bot_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/bot_controller -- -j16 -l16
+[1.515s] [35m[1mScanning dependencies of target bot_controller[0m
+[1.547s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_controller.dir/src/bot_controller.cpp.o[0m
+[4.158s] [100%] [32m[1mLinking CXX static library libbot_controller.a[0m
+[4.184s] [100%] Built target bot_controller
+[4.193s] Invoked command in '/home/ab/final_ws/build/bot_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/bot_controller -- -j16 -l16
+[4.212s] Invoking command in '/home/ab/final_ws/build/bot_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/bot_controller
+[4.219s] -- Install configuration: ""
+[4.219s] -- Installing: /home/ab/final_ws/install/bot_controller/include/bot_controller
+[4.219s] -- Installing: /home/ab/final_ws/install/bot_controller/include/bot_controller/bot_controller.h
+[4.219s] -- Installing: /home/ab/final_ws/install/bot_controller/lib/libbot_controller.a
+[4.219s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/library_path.sh
+[4.219s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/library_path.dsv
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/package_run_dependencies/bot_controller
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/parent_prefix_path/bot_controller
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/ament_prefix_path.sh
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/ament_prefix_path.dsv
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/path.sh
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/path.dsv
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.bash
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.sh
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.zsh
+[4.220s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.dsv
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/package.dsv
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/packages/bot_controller
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/export_bot_controllerExport.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/export_bot_controllerExport-noconfig.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_targets-extras.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/bot_controllerConfig.cmake
+[4.221s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/bot_controllerConfig-version.cmake
+[4.222s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/package.xml
+[4.223s] Invoked command in '/home/ab/final_ws/build/bot_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/bot_controller

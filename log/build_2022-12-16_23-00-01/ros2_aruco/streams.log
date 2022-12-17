@@ -1,0 +1,22 @@
+[0.893s] Invoking command in '/home/ab/final_ws/src/enpm809y_FinalFall2022/final/ros2_aruco/ros2_aruco': PYTHONPATH=/home/ab/final_ws/build/ros2_aruco/prefix_override:/home/ab/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/ros2_aruco build --build-base /home/ab/final_ws/build/ros2_aruco/build install --record /home/ab/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[1.081s] running egg_info
+[1.082s] writing ../../../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[1.082s] writing dependency_links to ../../../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[1.082s] writing entry points to ../../../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[1.082s] writing requirements to ../../../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[1.082s] writing top-level names to ../../../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[1.108s] reading manifest file '../../../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[1.108s] writing manifest file '../../../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[1.108s] running build
+[1.108s] running build_py
+[1.109s] running install
+[1.109s] running install_lib
+[1.110s] running install_data
+[1.111s] running install_egg_info
+[1.112s] removing '/home/ab/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco-0.1.0-py3.8.egg-info' (and everything under it)
+[1.112s] Copying ../../../../../build/ros2_aruco/ros2_aruco.egg-info to /home/ab/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco-0.1.0-py3.8.egg-info
+[1.113s] running install_scripts
+[1.125s] Installing aruco_generate_marker script to /home/ab/final_ws/install/ros2_aruco/lib/ros2_aruco
+[1.125s] Installing aruco_node script to /home/ab/final_ws/install/ros2_aruco/lib/ros2_aruco
+[1.125s] writing list of installed files to '/home/ab/final_ws/build/ros2_aruco/install.log'
+[1.146s] Invoked command in '/home/ab/final_ws/src/enpm809y_FinalFall2022/final/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/ab/final_ws/build/ros2_aruco/prefix_override:/home/ab/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/ros2_aruco build --build-base /home/ab/final_ws/build/ros2_aruco/build install --record /home/ab/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed

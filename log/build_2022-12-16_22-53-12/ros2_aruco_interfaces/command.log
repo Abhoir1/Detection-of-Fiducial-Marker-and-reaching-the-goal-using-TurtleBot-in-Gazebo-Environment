@@ -1,0 +1,6 @@
+Invoking command in '/home/ab/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/ros2_aruco_interfaces
+Invoked command in '/home/ab/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/ros2_aruco_interfaces
+Invoking command in '/home/ab/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/ros2_aruco_interfaces -- -j16 -l16
+Invoked command in '/home/ab/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/ros2_aruco_interfaces -- -j16 -l16
+Invoking command in '/home/ab/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/ros2_aruco_interfaces
+Invoked command in '/home/ab/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/ros2_aruco_interfaces

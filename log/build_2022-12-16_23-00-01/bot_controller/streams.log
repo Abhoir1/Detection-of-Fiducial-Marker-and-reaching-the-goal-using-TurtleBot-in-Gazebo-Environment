@@ -1,0 +1,32 @@
+[0.062s] Invoking command in '/home/ab/final_ws/build/bot_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/bot_controller -- -j16 -l16
+[0.477s] [100%] Built target bot_controller
+[0.480s] Invoked command in '/home/ab/final_ws/build/bot_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/bot_controller -- -j16 -l16
+[0.510s] Invoking command in '/home/ab/final_ws/build/bot_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/bot_controller
+[0.521s] -- Install configuration: ""
+[0.521s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/include/bot_controller
+[0.521s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/include/bot_controller/bot_controller.h
+[0.521s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/lib/libbot_controller.a
+[0.521s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/library_path.sh
+[0.521s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/library_path.dsv
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/package_run_dependencies/bot_controller
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/parent_prefix_path/bot_controller
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/ament_prefix_path.sh
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/ament_prefix_path.dsv
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/path.sh
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/environment/path.dsv
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.bash
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.sh
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.zsh
+[0.522s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/local_setup.dsv
+[0.522s] -- Installing: /home/ab/final_ws/install/bot_controller/share/bot_controller/package.dsv
+[0.524s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/ament_index/resource_index/packages/bot_controller
+[0.524s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/export_bot_controllerExport.cmake
+[0.524s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/export_bot_controllerExport-noconfig.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_targets-extras.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/bot_controllerConfig.cmake
+[0.525s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/cmake/bot_controllerConfig-version.cmake
+[0.526s] -- Up-to-date: /home/ab/final_ws/install/bot_controller/share/bot_controller/package.xml
+[0.530s] Invoked command in '/home/ab/final_ws/build/bot_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/bot_controller

@@ -1,0 +1,6 @@
+Invoking command in '/home/ab/final_ws/build/world_odom_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/world_odom_broadcaster -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/world_odom_broadcaster
+Invoked command in '/home/ab/final_ws/build/world_odom_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ab/final_ws/src/enpm809y_FinalFall2022/final/world_odom_broadcaster -DCMAKE_INSTALL_PREFIX=/home/ab/final_ws/install/world_odom_broadcaster
+Invoking command in '/home/ab/final_ws/build/world_odom_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/world_odom_broadcaster -- -j16 -l16
+Invoked command in '/home/ab/final_ws/build/world_odom_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/world_odom_broadcaster -- -j16 -l16
+Invoking command in '/home/ab/final_ws/build/world_odom_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/world_odom_broadcaster
+Invoked command in '/home/ab/final_ws/build/world_odom_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/world_odom_broadcaster

@@ -1,0 +1,4 @@
+Invoking command in '/home/ab/final_ws/build/tb3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/tb3_gazebo -- -j16 -l16
+Invoked command in '/home/ab/final_ws/build/tb3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/tb3_gazebo -- -j16 -l16
+Invoking command in '/home/ab/final_ws/build/tb3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/tb3_gazebo
+Invoked command in '/home/ab/final_ws/build/tb3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/tb3_gazebo

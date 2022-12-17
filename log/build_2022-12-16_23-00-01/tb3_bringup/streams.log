@@ -1,0 +1,48 @@
+[0.049s] Invoking command in '/home/ab/final_ws/build/tb3_bringup': AMENT_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/tb3_bringup -- -j16 -l16
+[0.086s] Invoked command in '/home/ab/final_ws/build/tb3_bringup' returned '0': AMENT_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:/opt/ros/galactic /usr/bin/cmake --build /home/ab/final_ws/build/tb3_bringup -- -j16 -l16
+[0.106s] Invoking command in '/home/ab/final_ws/build/tb3_bringup': AMENT_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/tb3_bringup
+[0.112s] -- Install configuration: "Release"
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/spawn_tb3_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/bringup_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/tb3_simulation_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/rviz_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/final.launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/slam_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/localization_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/launch/navigation_launch.py
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/maps
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/maps/turtlebot3_world.pgm
+[0.113s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/maps/turtlebot3_world.yaml
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/rviz
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/rviz/nav2_default_view.rviz
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/rviz/robots.rviz
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/rviz/nav2_namespaced_view.rviz
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/rviz/robot1.rviz
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/worlds
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/worlds/waffle.model
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/worlds/world_only.model
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/worlds/empty_world.world
+[0.114s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/params
+[0.115s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/params/nav2_multirobot_params_3yaml
+[0.115s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/params/nav2_params.yaml
+[0.115s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/params/nav2_multirobot_params_2.yaml
+[0.115s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/params/nav2_multirobot_params_1.yaml
+[0.115s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/urdf
+[0.116s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/urdf/turtlebot3_waffle.urdf
+[0.116s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/ament_index/resource_index/package_run_dependencies/tb3_bringup
+[0.116s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/ament_index/resource_index/parent_prefix_path/tb3_bringup
+[0.116s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/environment/ament_prefix_path.sh
+[0.118s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/environment/ament_prefix_path.dsv
+[0.118s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/environment/path.sh
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/environment/path.dsv
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/local_setup.bash
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/local_setup.sh
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/local_setup.zsh
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/local_setup.dsv
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/package.dsv
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/ament_index/resource_index/packages/tb3_bringup
+[0.119s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/cmake/tb3_bringupConfig.cmake
+[0.120s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/cmake/tb3_bringupConfig-version.cmake
+[0.120s] -- Up-to-date: /home/ab/final_ws/install/tb3_bringup/share/tb3_bringup/package.xml
+[0.120s] Invoked command in '/home/ab/final_ws/build/tb3_bringup' returned '0': AMENT_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ab/final_ws/install/tb3_gazebo:/opt/ros/galactic /usr/bin/cmake --install /home/ab/final_ws/build/tb3_bringup
