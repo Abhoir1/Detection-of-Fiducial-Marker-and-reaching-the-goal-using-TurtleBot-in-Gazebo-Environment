@@ -1,6 +1,22 @@
 #include <rclcpp/rclcpp.hpp>
 #include "target_reacher.h"
+/**
+ * @file target_reacher.cpp
+ * @author Sarin Ann Mathew (sarinann@umd.edu)
+ * @author Aditi Bhoir      (abhoir@umd.edu)
+ * @author Aditya Chaugule  (aditya97@umd.edu)
+ * @brief Implementation of class TargetReacher for moving the robot from goal 1 to goal 2
+ * @date 2022-12-16 * 
+ * @copyright Copyright (c) 2022
+ * @brief The class TargetReacher mentions the implementions of the methods declared in the header
+ * file
+ */
 
+ /**
+  * @brief Timer callback function to publish the twist velocities into robot1/cmd_vel 
+  * 
+  * @param msg 
+  */
 void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> msg)
 {
     if (msg->data == true )
@@ -13,9 +29,14 @@ void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> ms
     }
 }
 
+/**
+ * @brief Method to transform the goal 2 coordinates from the frame of the aruco )final destination)
+ *  to the frame of the robot through transform function
+ * 
+ * @param goal, pose, orientation
+ */
 void TargetReacher::final_destination(int goal)
 {
-
         geometry_msgs::msg::TransformStamped g;
 
         g.header.stamp = this->get_clock()->now();
@@ -57,14 +78,17 @@ void TargetReacher::final_destination(int goal)
 
         final_destination_broadcaster->sendTransform(g);
 
-        i = true;
-
-    
+        i = true;    
 }
 
+/**
+ * @brief 
+ * Using an integer variable, we are reading the marker_ids in the Aruco Interfaces 
+ * by reading the first element of the vector. This is used to identify the fiducial marker
+ * and retrive the goal positions
+ */
 void TargetReacher::check_marker(const std::shared_ptr<ros2_aruco_interfaces::msg::ArucoMarkers> aruco)
 {
-    
     auto marker = aruco->marker_ids;
     if (marker.at(0)==0){
         auto goal=0;
@@ -87,6 +111,11 @@ void TargetReacher::check_marker(const std::shared_ptr<ros2_aruco_interfaces::ms
     }
 }
 
+/**
+ * @brief Use Try and Catch implementation to check the connection between odom and final destination 
+ * in the TF tree. Logging the movement of the robot using set_goal function
+ * 
+ */
 void TargetReacher::check_destination()
 {
     if (i==true)
@@ -109,7 +138,6 @@ void TargetReacher::check_destination()
 
         m_bot_controller->set_goal(t.transform.translation.x, t.transform.translation.y);
     }
-
 }
 
 
