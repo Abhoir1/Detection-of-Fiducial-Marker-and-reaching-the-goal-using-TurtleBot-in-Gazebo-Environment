@@ -1,6 +1,18 @@
 #include <rclcpp/rclcpp.hpp>
 #include "target_reacher.h"
 
+void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> msg)
+{
+    if (msg->data == true && !m_is_aruco_marker_detected)
+    {
+        geometry_msgs::msg::Twist vel;
+        vel.linear.x = 0.0;
+        vel.angular.z = 0.2;
+        cmd_vel_publisher->publish(vel);
+        ros2_aruco_interfaces::msg::ArucoMarkers aruco;
+    }
+}
+
 void TargetReacher::final_destination(int goal)
 {
         geometry_msgs::msg::TransformStamped g;
@@ -34,7 +46,7 @@ void TargetReacher::final_destination(int goal)
         g.transform.rotation.x = 0.0;
         g.transform.rotation.y = 0.0;
         g.transform.rotation.z = 0.0;
-        g.transform.rotation.w = 1.0;
+        g.transform.rotation.w = 2.0;
 
         final_destination_broadcaster->sendTransform(g);
 
@@ -59,20 +71,6 @@ void TargetReacher::cb1(const std::shared_ptr<ros2_aruco_interfaces::msg::ArucoM
     }
 }
 
-void TargetReacher::timer_callback(const std::shared_ptr<std_msgs::msg::Bool> msg)
-{
-    if (msg->data)
-    {
-        geometry_msgs::msg::Twist vel;
-        vel.linear.x = 0;
-        vel.angular.z = 0.2;
-        cmd_vel_publisher->publish(vel);
-
-        ros2_aruco_interfaces::msg::ArucoMarkers aruco;
-
-    }
-}
-
 void TargetReacher::cb2()
 {
     if (i==true)
@@ -81,13 +79,13 @@ void TargetReacher::cb2()
         // Look up for the transformation between "robot1/odom" and "final_destination" frames
         try
         {
-            t = tf_buffer->lookupTransform("robot1/odom", "final_destination", tf2::TimePointZero);
+            t = tf_buffer->lookupTransform("/robot1/odom", "final_destination", tf2::TimePointZero);
         }
         catch (const tf2::TransformException &ex)
         {
             RCLCPP_INFO(
                 this->get_logger(), "Could not transform %s to %s: %s",
-                "robot1/odom", "final_destination", ex.what());
+                "/robot1/odom", "final_destination", ex.what());
             return;
         }
 

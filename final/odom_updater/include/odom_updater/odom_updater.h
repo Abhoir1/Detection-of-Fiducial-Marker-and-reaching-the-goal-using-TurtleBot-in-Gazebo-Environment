@@ -6,6 +6,7 @@
 #include "geometry_msgs/msg/pose.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2_ros/transform_broadcaster.h"
+#include "tf2_ros/transform_listener.h"
 #include <string>
 #include <sstream>
 
@@ -36,7 +37,7 @@ private:
     // Shared pointer to a Subscription object for the /robot1/odom topic
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr m_tf_subscription;
     
-    std::unique_ptr<tf2_ros::TransformBroadcaster> m_tf_broadcaster;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> m_tf_broadcaster{nullptr};
 
     // methods
     // void broadcast_odom(const std::shared_ptr<nav_msgs::msg::Odometry> msg);

@@ -6,6 +6,7 @@
 #include "bot_controller/bot_controller.h"
 #include "ros2_aruco_interfaces/msg/aruco_markers.hpp"
 #include "tf2_ros/static_transform_broadcaster.h"
+#include "tf2_ros/transform_broadcaster.h"
 
 // timer
 class TargetReacher : public rclcpp::Node
@@ -17,8 +18,8 @@ public:
         m_bot_controller = bot_controller;
         i = false;
         
-        auto goal_x = this->declare_parameter<double>("aruco_target.x");
-        auto goal_y = this->declare_parameter<double>("aruco_target.y");
+        goal_x = this->declare_parameter<double>("aruco_target.x");
+        goal_y = this->declare_parameter<double>("aruco_target.y");
 
         frame_id = this->declare_parameter<std::string>("final_destination.frame_id");
 
@@ -44,6 +45,8 @@ public:
 
         final_destination_broadcaster =
             std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+        // initial_destination_broadcaster =
+        //     std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
 
         m_timer = this->create_wall_timer(std::chrono::milliseconds((int)(1000.0 / 1.0)), std::bind(&TargetReacher::cb2, this));
         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
@@ -60,6 +63,7 @@ private:
     rclcpp::Subscription<ros2_aruco_interfaces::msg::ArucoMarkers>::SharedPtr aruco_subscriber;
     
     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> final_destination_broadcaster;
+    // std::shared_ptr<tf2_ros::StaticTransformBroadcaster> initial_destination_broadcaster;
     std::shared_ptr<tf2_ros::TransformListener> tf_listener;
     rclcpp::TimerBase::SharedPtr m_timer;
 
@@ -71,7 +75,8 @@ private:
 
     double aruco_1_x;
     double aruco_1_y;
-
+    double goal_x;
+    double goal_y;
     double aruco_2_x;
     double aruco_2_y;
 
@@ -79,6 +84,7 @@ private:
     double aruco_3_y;
 
     void final_destination(int k);
+    void initial_destination();
 
     void cb1(const std::shared_ptr<ros2_aruco_interfaces::msg::ArucoMarkers> aruco);
 

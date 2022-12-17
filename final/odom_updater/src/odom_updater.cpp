@@ -1,7 +1,8 @@
 #include <string>
 #include "odom_updater.h"
-// #include "tf2/LinearMath/Quaternion.h"
-// #include "geometry_msgs/msg/pose.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "geometry_msgs/msg/pose.hpp"
+#include <nav_msgs/msg/odometry.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 // void odom_updater::timer_callback(const std::shared_ptr<nav_msgs::msg::Odometry> msg)
@@ -28,12 +29,10 @@ void odom_updater::timer_callback(const std::shared_ptr<nav_msgs::msg::Odometry>
     t.transform.translation.y = msg->pose.pose.position.y;
     t.transform.translation.z = 0.0;
 
-    tf2::Quaternion q;
-    q.setRPY(0, 0, 0);
-    t.transform.rotation.x = q.x();
-    t.transform.rotation.y = q.y();
-    t.transform.rotation.z = q.z();
-    t.transform.rotation.w = q.w();
+    t.transform.rotation.x = msg->pose.pose.orientation.x;
+    t.transform.rotation.y = msg->pose.pose.orientation.y;
+    t.transform.rotation.z = msg->pose.pose.orientation.z;
+    t.transform.rotation.w = msg->pose.pose.orientation.w;
 
     // Send the transformation
     m_tf_broadcaster->sendTransform(t);
