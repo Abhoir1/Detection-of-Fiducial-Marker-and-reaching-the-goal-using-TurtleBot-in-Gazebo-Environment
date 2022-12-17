@@ -8,3 +8,5 @@ And run following commands
 git branch -M main
 
 git push -u origin main
+
+The repository provided by the professor is given in main branch and the implementation and modification done by the team members is given in new branch.
