@@ -10,6 +10,14 @@
 #include <string>
 #include <sstream>
 
+
+/**
+ * @brief The Odom Updater class
+ *
+ * This class contains a non-static broadcaster and a subscriber to retrieve the robot pose
+ *
+ */
+
 class odom_updater : public rclcpp::Node
 {
 public:
@@ -30,6 +38,7 @@ private:
     // Shared pointer to a Subscription object for the /robot1/odom topic
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr m_tf_subscription;
     
+    //Unique pointer to a transform broadcaster
     std::unique_ptr<tf2_ros::TransformBroadcaster> m_tf_broadcaster{nullptr};
 
     // methods
