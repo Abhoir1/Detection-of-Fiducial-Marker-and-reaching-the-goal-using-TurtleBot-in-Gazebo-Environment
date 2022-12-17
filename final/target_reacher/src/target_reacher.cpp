@@ -47,7 +47,7 @@ void TargetReacher::final_destination(int goal)
         g.transform.rotation.x = 0.0;
         g.transform.rotation.y = 0.0;
         g.transform.rotation.z = 0.0;
-        g.transform.rotation.w = 2.0;
+        g.transform.rotation.w = 1.0;
 
         final_destination_broadcaster->sendTransform(g);
 
