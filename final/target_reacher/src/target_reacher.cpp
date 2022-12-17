@@ -79,13 +79,13 @@ void TargetReacher::cb2()
         // Look up for the transformation between "robot1/odom" and "final_destination" frames
         try
         {
-            t = tf_buffer->lookupTransform("/robot1/odom", "final_destination", tf2::TimePointZero);
+            t = tf_buffer->lookupTransform("robot1/odom", "final_destination", tf2::TimePointZero);
         }
         catch (const tf2::TransformException &ex)
         {
             RCLCPP_INFO(
                 this->get_logger(), "Could not transform %s to %s: %s",
-                "/robot1/odom", "final_destination", ex.what());
+                "robot1/odom", "final_destination", ex.what());
             return;
         }
 
